@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 12% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 12% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 12% 16%;
+
+    --primary: 145 85% 15%;
+    --primary-foreground: 39 100% 93%;
+
+    --secondary: 200 15% 94%;
+    --secondary-foreground: 210 12% 16%;
+
+    --muted: 200 15% 94%;
+    --muted-foreground: 210 10% 45%;
+
+    --accent: 195 70% 88%;
+    --accent-foreground: 210 12% 16%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 15% 88%;
+    --input: 200 15% 88%;
+    --ring: 145 85% 15%;
+
+    --radius: 0.5rem;
+
+    /* Medical/Wellness Theme Colors */
+    --medical-blue: 145 85% 15%;
+    --medical-teal: 145 65% 25%;
+    --wellness-sage: 145 25% 65%;
+    --wellness-cream: 39 100% 93%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(145 85% 15%) 0%, hsl(145 70% 25%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(200 15% 97%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-elegant: 0 10px 30px -10px hsl(145 85% 15% / 0.15);
+  }
+
+  .dark {
+    --background: 210 12% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 210 12% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 12% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 145 85% 20%;
+    --primary-foreground: 39 100% 93%;
+
+    --secondary: 210 12% 16%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 12% 16%;
+    --muted-foreground: 210 10% 65%;
+
+    --accent: 210 12% 16%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 12% 20%;
+    --input: 210 12% 20%;
+    --ring: 145 85% 20%;
+    
+    --shadow-elegant: 0 10px 30px -10px hsl(145 85% 20% / 0.25);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
