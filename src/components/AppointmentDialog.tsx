@@ -35,9 +35,9 @@ const AppointmentDialog = ({ open, onOpenChange }: AppointmentDialogProps) => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.fullName || !formData.email || !formData.phone || !formData.service) {
       toast({
@@ -59,22 +59,41 @@ const AppointmentDialog = ({ open, onOpenChange }: AppointmentDialogProps) => {
       return;
     }
 
-    toast({
-      title: "Appointment Request Submitted!",
-      description: "We'll contact you soon to confirm your appointment.",
-    });
+    try {
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyH0JeReFrzUq9hDB14w0zDdSmgZ_GWaw_qz7Jzd4bWoeu26VNMPpuMiboprn5cocWW/exec";
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        mode: "no-cors", // Google Apps Script doesn’t return proper CORS headers
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Reset form
-    setFormData({
-      fullName: "",
-      email: "",
-      phone: "",
-      service: "",
-      message: "",
-    });
-    
-    onOpenChange(false);
+      toast({
+        title: "Appointment Request Submitted!",
+        description: "We'll contact you soon to confirm your appointment.",
+      });
+
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        service: "",
+        message: "",
+      });
+
+      onOpenChange(false);
+    } catch (error) {
+      console.error("Error saving form:", error);
+      toast({
+        title: "Error",
+        description: "Something went wrong while saving your data.",
+        variant: "destructive",
+      });
+    }
   };
+
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
