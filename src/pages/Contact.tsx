@@ -16,14 +16,26 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Appointment Request Received!",
-      description: "We'll contact you shortly to confirm your appointment.",
-    });
-    setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+    try {
+      const res = await fetch("https://automate.eyelevelstudio.in/webhook/nura23-form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error("Network error");
+      toast({
+        title: "Appointment Request Received!",
+        description: "We'll contact you shortly to confirm your appointment.",
+      });
+      setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+    } catch {
+      toast({ title: "Failed to send", description: "Please try again.", variant: "destructive" });
+    }
   };
+  
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
