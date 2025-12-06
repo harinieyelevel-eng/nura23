@@ -227,7 +227,7 @@ const Contact = () => {
             <h2 className="text-3xl font-bold mb-8 text-center text-foreground">Find Us</h2>
             <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6666666666665!2d80.2222222!3d13.0111111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAwJzQwLjAiTiA4MMKwMTMnMjAuMCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d971.6873731056614!2d80.2244951696187!3d13.051611099204463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAzJzA1LjgiTiA4MMKwMTMnMzAuNSJF!5e0!3m2!1sen!2sin!4v1765005074465!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
