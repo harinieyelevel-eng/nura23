@@ -11,17 +11,22 @@ import wellnessSlimming from "@/assets/wellness-slimming.jpg";
 import wellnessStressRelief from "@/assets/wellness-stress-relief.jpg";
 import wellnessMassage from "@/assets/wellness-massage-new.jpg";
 import wellnessNutrition from "@/assets/wellness-nutrition.jpg";
+import SEO from "@/components/SEO";
 
 const Wellness = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO
+        title="Foot Reflexology, Holistic Wellness, Detox & Weight Management in Chennai | NURA23"
+        description="Experience Foot Reflexology, holistic wellness at NURA23 in Chennai with stress-relief therapies, body detox, weight-management support and nutrition-focused programs that enhance overall health, skin and hair."
+      />
       {/* Header */}
       <section className="py-20 bg-gradient-to-b from-secondary/10 to-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground">WELLNESS</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              True wellness encompasses body, mind, and spirit. Our holistic programs combine traditional healing practices 
+              True wellness encompasses body, mind, and spirit. Our holistic programs combine traditional healing practices
               with modern therapies to restore balance, vitality, and inner peace.
             </p>
           </div>
@@ -32,9 +37,9 @@ const Wellness = () => {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <img 
-              src={wellnessLuxury} 
-              alt="Luxury Wellness Spa at NURA23" 
+            <img
+              src={wellnessLuxury}
+              alt="Luxury Wellness Spa at NURA23"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -49,17 +54,17 @@ const Wellness = () => {
               <div className="p-3 bg-primary/10 rounded-lg">
                 <Footprints className="h-8 w-8 text-primary" />
               </div>
-            <div>
-              <h2 className="text-3xl font-bold text-foreground">Foot Reflexology – Rejuvenate Your Body and Mind at Nura23</h2>
-              <p className="text-lg text-muted-foreground">Heal, Relax, and Restore Balance with Foot Reflexology</p>
-            </div>
+              <div>
+                <h2 className="text-3xl font-bold text-foreground">Foot Reflexology – Rejuvenate Your Body and Mind at Nura23</h2>
+                <p className="text-lg text-muted-foreground">Heal, Relax, and Restore Balance with Foot Reflexology</p>
+              </div>
             </div>
 
             {/* Foot Reflexology Image */}
             <div className="rounded-lg overflow-hidden shadow-lg my-8">
-              <img 
-                src={footReflexology2} 
-                alt="Relaxing foot reflexology treatment with essential oils" 
+              <img
+                src={footReflexology2}
+                alt="Relaxing foot reflexology treatment with essential oils"
                 className="w-full h-[400px] object-cover"
               />
             </div>
@@ -228,9 +233,9 @@ const Wellness = () => {
 
             {/* Detox Image */}
             <div className="rounded-lg overflow-hidden shadow-lg my-8">
-              <img 
-                src={wellnessDetox} 
-                alt="Detox and rejuvenation program with herbal treatments at Nura23" 
+              <img
+                src={wellnessDetox}
+                alt="Detox and rejuvenation program with herbal treatments at Nura23"
                 className="w-full h-[400px] object-cover"
               />
             </div>
@@ -390,9 +395,9 @@ const Wellness = () => {
 
             {/* Pedicure & Manicure Image */}
             <div className="rounded-lg overflow-hidden shadow-lg my-8">
-              <img 
-                src={wellnessPedicure} 
-                alt="Luxury pedicure and manicure spa treatment at Nura23" 
+              <img
+                src={wellnessPedicure}
+                alt="Luxury pedicure and manicure spa treatment at Nura23"
                 className="w-full h-[400px] object-cover"
               />
             </div>
@@ -532,9 +537,9 @@ const Wellness = () => {
 
             {/* Slimming & Weight Management Image */}
             <div className="rounded-lg overflow-hidden shadow-lg my-8">
-              <img 
-                src={wellnessSlimming} 
-                alt="Slimming and weight management program at Nura23" 
+              <img
+                src={wellnessSlimming}
+                alt="Slimming and weight management program at Nura23"
                 className="w-full h-[400px] object-cover"
               />
             </div>
@@ -694,9 +699,9 @@ const Wellness = () => {
 
             {/* Stress Relief & Relaxation Image */}
             <div className="rounded-lg overflow-hidden shadow-lg my-8">
-              <img 
-                src={wellnessStressRelief} 
-                alt="Stress relief and relaxation therapy at Nura23" 
+              <img
+                src={wellnessStressRelief}
+                alt="Stress relief and relaxation therapy at Nura23"
                 className="w-full h-[400px] object-cover"
               />
             </div>
@@ -841,9 +846,9 @@ const Wellness = () => {
 
             {/* Holistic Massage & Aromatherapy Image */}
             <div className="rounded-lg overflow-hidden shadow-lg my-8">
-              <img 
-                src={wellnessMassage} 
-                alt="Holistic massage and aromatherapy session at Nura23" 
+              <img
+                src={wellnessMassage}
+                alt="Holistic massage and aromatherapy session at Nura23"
                 className="w-full h-[400px] object-cover"
               />
             </div>
@@ -971,9 +976,9 @@ const Wellness = () => {
 
             {/* Nutrition & Lifestyle Consultation Image */}
             <div className="rounded-lg overflow-hidden shadow-lg my-8">
-              <img 
-                src={wellnessNutrition} 
-                alt="Nutrition and lifestyle consultation at Nura23" 
+              <img
+                src={wellnessNutrition}
+                alt="Nutrition and lifestyle consultation at Nura23"
                 className="w-full h-[400px] object-cover"
               />
             </div>

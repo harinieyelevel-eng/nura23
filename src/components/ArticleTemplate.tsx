@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Calendar, ArrowLeft, Share2, Facebook, Linkedin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -12,8 +12,10 @@ interface ArticleTemplateProps {
 }
 
 const ArticleTemplate = ({ title, date, category, image, content }: ArticleTemplateProps) => {
-  const currentUrl = window.location.href;
-  
+  const location = useLocation();
+  const domain = "https://nura23.com";
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : `${domain}${location.pathname}`;
+
   const shareLinks = {
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`,
     x: `https://x.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(title)}`,
@@ -64,9 +66,9 @@ const ArticleTemplate = ({ title, date, category, image, content }: ArticleTempl
       <section className="py-0 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <img 
-              src={image} 
-              alt={title} 
+            <img
+              src={image}
+              alt={title}
               className="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -79,7 +81,7 @@ const ArticleTemplate = ({ title, date, category, image, content }: ArticleTempl
           <article className="max-w-4xl mx-auto prose prose-lg">
             {content}
           </article>
-          
+
           {/* Share Buttons */}
           <div className="max-w-4xl mx-auto mt-12 pt-8 border-t">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
@@ -107,7 +109,7 @@ const ArticleTemplate = ({ title, date, category, image, content }: ArticleTempl
                 >
                   <a href={shareLinks.x} target="_blank" rel="noopener noreferrer">
                     <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                     </svg>
                     X
                   </a>

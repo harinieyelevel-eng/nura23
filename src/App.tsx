@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
@@ -36,36 +36,34 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/skin-care" element={<SkinCare />} />
-          <Route path="/services/aesthetics" element={<Aesthetics />} />
-          <Route path="/services/hair-treatment" element={<HairTreatment />} />
-          <Route path="/services/wellness" element={<Wellness />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/academy" element={<Academy />} />
-          <Route path="/articles" element={<Articles />} />
-          <Route path="/articles/future-skincare-2025" element={<FutureSkincare2025 />} />
-          <Route path="/articles/traditional-body-spa" element={<TraditionalBodySpa />} />
-          <Route path="/articles/ageless-beauty" element={<AgelessBeauty />} />
-          <Route path="/articles/holistic-glow" element={<HolisticGlow />} />
-          <Route path="/articles/spa-day-2025" element={<SpaDay2025 />} />
-          <Route path="/articles/beauty-trends-2025" element={<BeautyTrends2025 />} />
-          <Route path="/articles/bridal-glow" element={<BridalGlow />} />
-          <Route path="/articles/aesthetics-wellness" element={<AestheticsWellness />} />
-          <Route path="/articles/skin-every-age" element={<SkinEveryAge />} />
-          <Route path="/articles/self-care-success" element={<SelfCareSuccess />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <ScrollToTop />
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/skin-care" element={<SkinCare />} />
+        <Route path="/services/aesthetics" element={<Aesthetics />} />
+        <Route path="/services/hair-treatment" element={<HairTreatment />} />
+        <Route path="/services/wellness" element={<Wellness />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/academy" element={<Academy />} />
+        <Route path="/articles" element={<Articles />} />
+        <Route path="/articles/future-skincare-2025" element={<FutureSkincare2025 />} />
+        <Route path="/articles/traditional-body-spa" element={<TraditionalBodySpa />} />
+        <Route path="/articles/ageless-beauty" element={<AgelessBeauty />} />
+        <Route path="/articles/holistic-glow" element={<HolisticGlow />} />
+        <Route path="/articles/spa-day-2025" element={<SpaDay2025 />} />
+        <Route path="/articles/beauty-trends-2025" element={<BeautyTrends2025 />} />
+        <Route path="/articles/bridal-glow" element={<BridalGlow />} />
+        <Route path="/articles/aesthetics-wellness" element={<AestheticsWellness />} />
+        <Route path="/articles/skin-every-age" element={<SkinEveryAge />} />
+        <Route path="/articles/self-care-success" element={<SelfCareSuccess />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
     </TooltipProvider>
   </QueryClientProvider>
 );

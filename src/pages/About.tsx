@@ -2,10 +2,15 @@ import { Target, Eye, Award, Heart, Lightbulb, HandHeart, Sparkles } from "lucid
 import aboutVision from "@/assets/about-vision.png";
 import aboutPhilosophy from "@/assets/about-philosophy.png";
 import nuraLogoNew from "@/assets/nura-logo-new.png";
+import SEO from "@/components/SEO";
 
 const About = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO
+        title="About NURA23 | Advanced Skin, Hair & Foot Reflexology Clinic in Kodambakkam, Chennai"
+        description="Discover NURA23, a state-of-the-art skin, hair and wellness clinic in Kodambakkam, Chennai, led by qualified experts providing customized dermatology, aesthetic and holistic treatments in a safe, technology-driven environment."
+      />
       {/* Our Story */}
       <section className="py-16 bg-secondary/20">
         <div className="container mx-auto px-4">
@@ -13,26 +18,26 @@ const About = () => {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-foreground">Our Story</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Nura23 was founded with a simple vision — to redefine beauty through personalized skin care, 
+                Nura23 was founded with a simple vision — to redefine beauty through personalized skin care,
                 advanced aesthetics, and wellness from within.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                At Nura23 Skin & Wellness, we believe that true beauty and wellness come from harmony between 
-                the body, mind, and spirit. Established with a vision to empower individuals to look confident, 
-                feel radiant, and live healthier, Nura23 has become a trusted destination for advanced skincare, 
+                At Nura23 Skin & Wellness, we believe that true beauty and wellness come from harmony between
+                the body, mind, and spirit. Established with a vision to empower individuals to look confident,
+                feel radiant, and live healthier, Nura23 has become a trusted destination for advanced skincare,
                 hair treatments, body wellness, and holistic therapies.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Our clinic is designed to combine modern science with traditional healing practices, offering 
-                personalized solutions that cater to each individual's unique needs. From rejuvenating facials 
-                and anti-aging therapies to advanced hair treatments, body contouring, stress relief, and nutrition 
+                Our clinic is designed to combine modern science with traditional healing practices, offering
+                personalized solutions that cater to each individual's unique needs. From rejuvenating facials
+                and anti-aging therapies to advanced hair treatments, body contouring, stress relief, and nutrition
                 guidance, we provide comprehensive wellness solutions under one roof.
               </p>
             </div>
             <div className="flex justify-center">
-              <img 
-                src={nuraLogoNew} 
-                alt="NURA23 Aesthetic & Wellness Centre" 
+              <img
+                src={nuraLogoNew}
+                alt="NURA23 Aesthetic & Wellness Centre"
                 className="w-full max-w-md object-contain"
               />
             </div>
@@ -51,9 +56,9 @@ const About = () => {
                   <h2 className="text-2xl font-bold text-foreground">Our Vision</h2>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Our vision is to redefine wellness and beauty experiences by blending cutting-edge science 
-                  with holistic care, ensuring every client leaves feeling rejuvenated, confident, and empowered. 
-                  At Nura23, we see wellness as a journey, not a destination, and we are committed to guiding 
+                  Our vision is to redefine wellness and beauty experiences by blending cutting-edge science
+                  with holistic care, ensuring every client leaves feeling rejuvenated, confident, and empowered.
+                  At Nura23, we see wellness as a journey, not a destination, and we are committed to guiding
                   you every step of the way.
                 </p>
               </div>
@@ -83,14 +88,14 @@ const About = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img 
-                src={aboutVision} 
-                alt="Professional Skincare Treatment" 
+              <img
+                src={aboutVision}
+                alt="Professional Skincare Treatment"
                 className="w-full h-64 object-cover rounded-lg shadow-lg"
               />
-              <img 
-                src={aboutPhilosophy} 
-                alt="Wellness Consultation" 
+              <img
+                src={aboutPhilosophy}
+                alt="Wellness Consultation"
                 className="w-full h-64 object-cover rounded-lg shadow-lg mt-8"
               />
             </div>

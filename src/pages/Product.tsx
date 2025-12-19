@@ -6,12 +6,17 @@ import productHero from "@/assets/product-hero.jpg";
 import productSerum from "@/assets/product-serum.jpg";
 import productCream from "@/assets/product-cream.jpg";
 import productMask from "@/assets/product-mask.jpg";
+import SEO from "@/components/SEO";
 
 const Product = () => {
   const [appointmentOpen, setAppointmentOpen] = useState(false);
 
   return (
     <div className="min-h-screen pt-20">
+      <SEO
+        title="Premium Skincare Products | Anti-Aging & Acne Solutions | NURA23"
+        description="Shop NURA23's exclusive range of premium skincare products. From anti-aging serums and acne treatments to daily essentials, find expert-recommended solutions for glowing, healthy skin."
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-secondary/5 py-20">
         <div className="container mx-auto px-4">
@@ -376,8 +381,8 @@ const Product = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Experience the art of transformation. Visit Nura23 Skin & Aesthetics Clinic or explore our exclusive product line to begin your personalized wellness and skincare journey today.
             </p>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="text-lg px-8"
               onClick={() => setAppointmentOpen(true)}
             >
@@ -387,9 +392,9 @@ const Product = () => {
         </div>
       </section>
 
-      <AppointmentDialog 
-        open={appointmentOpen} 
-        onOpenChange={setAppointmentOpen} 
+      <AppointmentDialog
+        open={appointmentOpen}
+        onOpenChange={setAppointmentOpen}
       />
     </div>
   );

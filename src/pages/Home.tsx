@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sparkles, Heart, Leaf, ShieldCheck } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
 import AppointmentDialog from "@/components/AppointmentDialog";
+import SEO from "@/components/SEO";
 import { useRef, useState } from "react";
 import {
   Carousel,
@@ -62,6 +63,10 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Best Aesthetic & Skin Clinic in Chennai | Wellness & Foot Reflexology | NURA23"
+        description="NURA23 is a premium aesthetic clinic and wellness centre in Kodambakkam, Chennai, offering advanced acne and skin treatments, anti-aging procedures, laser skin treatment, body slimming and therapeutic foot reflexology for pain relief and relaxation."
+      />
       {/* Hero Carousel Section */}
       <section className="relative h-screen">
         <Carousel
@@ -93,8 +98,8 @@ const Home = () => {
                       <Button size="lg" asChild className="bg-white/10 text-white border border-white/20 hover:bg-white/20 backdrop-blur-sm">
                         <Link to="/services">Explore Services</Link>
                       </Button>
-                      <Button 
-                        size="lg" 
+                      <Button
+                        size="lg"
                         onClick={() => setAppointmentOpen(true)}
                         className="bg-white/10 text-white border border-white/20 hover:bg-white/20 backdrop-blur-sm"
                       >
@@ -117,13 +122,13 @@ const Home = () => {
               NURA23 Mission
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At Nura23, we are passionate about guiding our clients toward healthier skin and balanced living. 
-              Our mission is to provide safe, customized, and effective skincare and body therapies that enhance 
+              At Nura23, we are passionate about guiding our clients toward healthier skin and balanced living.
+              Our mission is to provide safe, customized, and effective skincare and body therapies that enhance
               beauty, promote healing, and inspire confidence.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Your journey to glowing skin, timeless beauty, and inner wellness begins here. At Nura23 Skin Care, 
-              Aesthetics & Wellness, we combine advanced aesthetic technology, holistic wellness principles, and 
+              Your journey to glowing skin, timeless beauty, and inner wellness begins here. At Nura23 Skin Care,
+              Aesthetics & Wellness, we combine advanced aesthetic technology, holistic wellness principles, and
               personalized care to help you look and feel your absolute best.
             </p>
           </div>
@@ -193,7 +198,7 @@ const Home = () => {
               Our Services
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              From rejuvenating facials and skin tightening to body contouring and wellness therapies, 
+              From rejuvenating facials and skin tightening to body contouring and wellness therapies,
               we create tailored experiences that enhance your natural beauty.
             </p>
           </div>
@@ -244,8 +249,8 @@ const Home = () => {
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
             Book your consultation today and discover personalized care that brings out your natural beauty.
           </p>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             variant="secondary"
             onClick={() => setAppointmentOpen(true)}
           >
@@ -254,9 +259,9 @@ const Home = () => {
         </div>
       </section>
 
-      <AppointmentDialog 
-        open={appointmentOpen} 
-        onOpenChange={setAppointmentOpen} 
+      <AppointmentDialog
+        open={appointmentOpen}
+        onOpenChange={setAppointmentOpen}
       />
     </div>
   );

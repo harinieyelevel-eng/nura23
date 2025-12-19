@@ -8,10 +8,15 @@ import hairTreatmentHero from "@/assets/hair-treatment-hero.png";
 import prpGfcTherapy from "@/assets/prp-gfc-therapy.png";
 import laserHairRegrowth from "@/assets/laser-hair-regrowth.png";
 import holisticHairWellness from "@/assets/holistic-hair-wellness.png";
+import SEO from "@/components/SEO";
 
 const HairTreatment = () => {
   return (
     <div className="min-h-screen pt-16">
+      <SEO
+        title="Hair Fall & Scalp Care Clinic in Kodambakkam, Chennai | NURA23"
+        description="Treat hair fall, thinning and scalp issues at NURA23 in Kodambakkam, Chennai with scalp detox, hair rejuvenation procedures and advanced hair regrowth therapies for stronger, healthier hair."
+      />
       {/* Header */}
       <section className="py-20 bg-gradient-to-b from-secondary/10 to-secondary/30">
         <div className="container mx-auto px-4">
@@ -19,7 +24,7 @@ const HairTreatment = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-foreground">HAIR</h1>
             <h2 className="text-2xl font-semibold text-foreground">Our Signature Hair Treatments</h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Healthy, beautiful hair begins with a balanced scalp and nourished follicles. Our advanced hair treatments 
+              Healthy, beautiful hair begins with a balanced scalp and nourished follicles. Our advanced hair treatments
               combat thinning, stimulate growth, and restore natural density.
             </p>
           </div>
@@ -30,9 +35,9 @@ const HairTreatment = () => {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <img 
-              src={hairTreatmentHero} 
-              alt="Professional Hair Treatment at NURA23" 
+            <img
+              src={hairTreatmentHero}
+              alt="Professional Hair Treatment at NURA23"
               className="w-full h-[500px] object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -55,9 +60,9 @@ const HairTreatment = () => {
 
             {/* Image below heading */}
             <div className="mb-8">
-              <img 
-                src={scalpDetoxTherapy} 
-                alt="Scalp Detox & Rejuvenation Therapy at NURA23" 
+              <img
+                src={scalpDetoxTherapy}
+                alt="Scalp Detox & Rejuvenation Therapy at NURA23"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -209,9 +214,9 @@ const HairTreatment = () => {
 
             {/* Image below heading */}
             <div className="mb-8">
-              <img 
-                src={prpGfcTherapy} 
-                alt="Advanced Hair Fall Control PRP/GFC Therapy at NURA23" 
+              <img
+                src={prpGfcTherapy}
+                alt="Advanced Hair Fall Control PRP/GFC Therapy at NURA23"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -235,7 +240,7 @@ const HairTreatment = () => {
               <div>
                 <h4 className="text-xl font-bold mb-4 text-foreground">Understanding PRP and GFC Therapy</h4>
                 <p className="text-muted-foreground mb-4">Both PRP and GFC are autologous therapies, meaning they use your body's own growth factors and platelets to heal and rejuvenate hair follicles.</p>
-                
+
                 <div className="space-y-6">
                   <div className="bg-secondary/10 p-6 rounded-lg">
                     <h5 className="text-lg font-bold mb-3 text-foreground">1. PRP (Platelet-Rich Plasma) Therapy</h5>
@@ -381,9 +386,9 @@ const HairTreatment = () => {
 
             {/* Image below heading */}
             <div className="mb-8">
-              <img 
-                src={laserHairRegrowth} 
-                alt="Laser Hair Regrowth Therapy at NURA23" 
+              <img
+                src={laserHairRegrowth}
+                alt="Laser Hair Regrowth Therapy at NURA23"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -564,9 +569,9 @@ const HairTreatment = () => {
 
             {/* Image below heading */}
             <div className="mb-8">
-              <img 
-                src={holisticHairWellness} 
-                alt="Holistic Hair Wellness at NURA23" 
+              <img
+                src={holisticHairWellness}
+                alt="Holistic Hair Wellness at NURA23"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
             </div>

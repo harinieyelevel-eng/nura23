@@ -11,6 +11,7 @@ import bridalGlowImg from "@/assets/articles/bridal-glow.jpg";
 import transformationImg from "@/assets/articles/transformation.jpg";
 import skinEveryAgeImg from "@/assets/articles/skin-every-age.jpg";
 import selfCareSuccessImg from "@/assets/articles/self-care-success.jpg";
+import SEO from "@/components/SEO";
 
 const Articles = () => {
   const articles = [
@@ -28,6 +29,10 @@ const Articles = () => {
 
   return (
     <div className="min-h-screen pt-16">
+      <SEO
+        title="Beauty & Wellness Blog | Skincare Tips & Treatments | NURA23"
+        description="Read the latest skincare tips, wellness guides and treatment insights from NURA23 experts. Stay updated on beauty trends, aesthetic procedures and holistic health in Chennai."
+      />
       {/* Articles Grid */}
       <section className="py-16 bg-secondary/20">
         <div className="container mx-auto px-4">
@@ -67,7 +72,7 @@ const Articles = () => {
             <Card>
               <CardContent className="p-6 space-y-4">
                 <p className="text-muted-foreground italic">
-                  "The team at NURA23 is amazing! My skin has never looked better. The personalized care 
+                  "The team at NURA23 is amazing! My skin has never looked better. The personalized care
                   and attention to detail are exceptional."
                 </p>
                 <div className="font-semibold text-foreground">- Priya R.</div>
@@ -76,7 +81,7 @@ const Articles = () => {
             <Card>
               <CardContent className="p-6 space-y-4">
                 <p className="text-muted-foreground italic">
-                  "I've tried many clinics, but NURA23 stands out. The RF skin tightening treatment 
+                  "I've tried many clinics, but NURA23 stands out. The RF skin tightening treatment
                   gave me visible results without any downtime."
                 </p>
                 <div className="font-semibold text-foreground">- Rahul M.</div>
@@ -85,7 +90,7 @@ const Articles = () => {
             <Card>
               <CardContent className="p-6 space-y-4">
                 <p className="text-muted-foreground italic">
-                  "Professional, caring, and results-driven. The scalp detox therapy helped with my 
+                  "Professional, caring, and results-driven. The scalp detox therapy helped with my
                   hair fall issues significantly. Highly recommend!"
                 </p>
                 <div className="font-semibold text-foreground">- Ananya S.</div>

@@ -8,12 +8,17 @@ import academyClassroom from "@/assets/academy-classroom.png";
 import reflexologySession from "@/assets/reflexology-session-user.png";
 import reflexologyPoints from "@/assets/reflexology-points-final.jpg";
 import reflexologyTherapy from "@/assets/reflexology-therapy-bright.jpg";
+import SEO from "@/components/SEO";
 
 const Academy = () => {
   const [appointmentOpen, setAppointmentOpen] = useState(false);
 
   return (
     <div className="min-h-screen pt-20">
+      <SEO
+        title="Aesthetics & Foot Reflexology Training Academy in Chennai | NURA23"
+        description="NURA23 Academy in Chennai offers practical training in non-surgical aesthetic treatments, skin care, spa and wellness therapies, and reflexology techniques for professionals seeking to build a career in aesthetics and holistic wellness."
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-secondary/5 py-20">
         <div className="container mx-auto px-4">
@@ -401,8 +406,8 @@ const Academy = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               If you're ready to start your career in Aesthetics or Permanent Makeup, there's no better time than now — and no better place than Nura23 Academy.
             </p>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="text-lg px-8"
               onClick={() => setAppointmentOpen(true)}
             >
@@ -412,9 +417,9 @@ const Academy = () => {
         </div>
       </section>
 
-      <AppointmentDialog 
-        open={appointmentOpen} 
-        onOpenChange={setAppointmentOpen} 
+      <AppointmentDialog
+        open={appointmentOpen}
+        onOpenChange={setAppointmentOpen}
       />
     </div>
   );

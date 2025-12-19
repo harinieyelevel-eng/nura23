@@ -6,6 +6,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
+import Link from "react-router-dom"; // Assuming Link is used or needed, if not just remove or keep existing imports
+import SEO from "@/components/SEO";
+
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -34,7 +37,7 @@ const Contact = () => {
       toast({ title: "Failed to send", description: "Please try again.", variant: "destructive" });
     }
   };
-  
+
 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -43,6 +46,10 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen pt-16">
+      <SEO
+        title="Contact NURA23 | Best Skin & Hair Clinic in Kodambakkam, Chennai"
+        description="Book an appointment at NURA23 in Kodambakkam, Chennai for expert skin, hair and wellness treatments. Call us at +91 75500 44699 for consultations and inquiries."
+      />
       {/* Contact Information & Form */}
       <section className="py-16 bg-secondary/20">
         <div className="container mx-auto px-4">
@@ -52,7 +59,7 @@ const Contact = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-foreground">Get In Touch</h2>
                 <p className="text-muted-foreground mb-8">
-                  We're here to answer your questions and help you begin your wellness journey. 
+                  We're here to answer your questions and help you begin your wellness journey.
                   Reach out to us through any of the following methods.
                 </p>
               </div>

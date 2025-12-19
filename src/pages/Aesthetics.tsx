@@ -10,18 +10,23 @@ import skinTighteningRF from "@/assets/skin-tightening-rf.png";
 import bodyContouringRF from "@/assets/body-contouring-rf-new.png";
 import prpMicroneedling from "@/assets/prp-microneedling.png";
 import botoxFillers from "@/assets/botox-fillers.png";
+import SEO from "@/components/SEO";
 
 const Aesthetics = () => {
 
   return (
     <div className="min-h-screen pt-16">
+      <SEO
+        title="Non-Surgical Aesthetic Treatments & Body Slimming in Chennai | NURA23"
+        description="Experience premium non-surgical aesthetic treatments in Chennai at NURA23, including anti-aging treatments, laser-based skin rejuvenation and targeted body slimming treatments designed to contour, tighten and enhance your appearance."
+      />
       {/* Header */}
       <section className="py-20 bg-gradient-to-b from-secondary/10 to-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground">AESTHETICS</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Advanced non-invasive aesthetic solutions for body contouring, skin rejuvenation, and facial enhancement. 
+              Advanced non-invasive aesthetic solutions for body contouring, skin rejuvenation, and facial enhancement.
               Science-backed treatments that deliver natural, beautiful results.
             </p>
           </div>
@@ -32,9 +37,9 @@ const Aesthetics = () => {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <img 
-              src={aestheticsLuxury} 
-              alt="Advanced Aesthetic Treatment Room at NURA23" 
+            <img
+              src={aestheticsLuxury}
+              alt="Advanced Aesthetic Treatment Room at NURA23"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -57,9 +62,9 @@ const Aesthetics = () => {
 
             {/* Image below heading */}
             <div className="mb-8">
-              <img 
-                src={laserTreatmentSession} 
-                alt="Laser Hair Reduction Treatment Session at NURA23" 
+              <img
+                src={laserTreatmentSession}
+                alt="Laser Hair Reduction Treatment Session at NURA23"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -231,258 +236,258 @@ const Aesthetics = () => {
 
             {/* Image below heading */}
             <div className="mb-8">
-              <img 
-                src={skinTighteningRF} 
-                alt="Skin Tightening & Lifting RF Treatment at NURA23" 
+              <img
+                src={skinTighteningRF}
+                alt="Skin Tightening & Lifting RF Treatment at NURA23"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
             </div>
 
             <div className="space-y-6">
-                <div>
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">Rediscover Firmness. Redefine Confidence.</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    At Nura23 Skin, Aesthetics & Wellness, we believe that ageless beauty doesn't come from surgery — it comes from science, care, and precision.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed mt-4">
-                    Our RF Skin Tightening & Lifting treatment uses advanced Radio Frequency (RF) technology to tighten loose skin, sculpt facial contours, and stimulate natural collagen production — giving you a visibly firmer, lifted, and rejuvenated appearance without needles or downtime.
-                  </p>
-                  <p className="text-lg font-semibold text-primary mt-4 italic">
-                    Because real beauty radiates from confidence, not correction.
-                  </p>
-                </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Rediscover Firmness. Redefine Confidence.</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  At Nura23 Skin, Aesthetics & Wellness, we believe that ageless beauty doesn't come from surgery — it comes from science, care, and precision.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mt-4">
+                  Our RF Skin Tightening & Lifting treatment uses advanced Radio Frequency (RF) technology to tighten loose skin, sculpt facial contours, and stimulate natural collagen production — giving you a visibly firmer, lifted, and rejuvenated appearance without needles or downtime.
+                </p>
+                <p className="text-lg font-semibold text-primary mt-4 italic">
+                  Because real beauty radiates from confidence, not correction.
+                </p>
+              </div>
 
-                <div>
-                  <h4 className="text-xl font-bold mb-3 text-foreground">What Is RF Skin Tightening & Lifting?</h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Radio Frequency (RF) Skin Tightening is a non-invasive aesthetic procedure that delivers controlled heat energy deep into the skin layers. This heat stimulates collagen and elastin regeneration — the key structural proteins responsible for firmness, elasticity, and youthful skin texture.
-                  </p>
-                  <div className="mt-4 space-y-2">
-                    {[
-                      "Reduced wrinkles and fine lines",
-                      "Tighter, smoother skin",
-                      "Improved facial contours",
-                      "A naturally lifted look"
-                    ].map((benefit, idx) => (
-                      <div key={idx} className="flex items-center space-x-2">
-                        <span className="text-primary">✓</span>
-                        <span className="text-muted-foreground">{benefit}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed mt-4">
-                    Unlike surgical facelifts, RF treatments require no anesthesia, no incisions, and no recovery time — making it the preferred modern solution for skin rejuvenation.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed mt-4">
-                    At Nura23, we use FDA-approved RF technology with customizable intensity levels, ensuring safe, comfortable, and effective sessions for every skin type.
-                  </p>
+              <div>
+                <h4 className="text-xl font-bold mb-3 text-foreground">What Is RF Skin Tightening & Lifting?</h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  Radio Frequency (RF) Skin Tightening is a non-invasive aesthetic procedure that delivers controlled heat energy deep into the skin layers. This heat stimulates collagen and elastin regeneration — the key structural proteins responsible for firmness, elasticity, and youthful skin texture.
+                </p>
+                <div className="mt-4 space-y-2">
+                  {[
+                    "Reduced wrinkles and fine lines",
+                    "Tighter, smoother skin",
+                    "Improved facial contours",
+                    "A naturally lifted look"
+                  ].map((benefit, idx) => (
+                    <div key={idx} className="flex items-center space-x-2">
+                      <span className="text-primary">✓</span>
+                      <span className="text-muted-foreground">{benefit}</span>
+                    </div>
+                  ))}
                 </div>
+                <p className="text-muted-foreground leading-relaxed mt-4">
+                  Unlike surgical facelifts, RF treatments require no anesthesia, no incisions, and no recovery time — making it the preferred modern solution for skin rejuvenation.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mt-4">
+                  At Nura23, we use FDA-approved RF technology with customizable intensity levels, ensuring safe, comfortable, and effective sessions for every skin type.
+                </p>
+              </div>
 
-                <div>
-                  <h4 className="text-xl font-bold mb-3 text-foreground">How RF Technology Works – The Science Behind the Lift</h4>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    The RF energy penetrates the deeper dermal layers (without damaging the surface) and heats the tissues to approximately 40–45°C. This controlled thermal stimulation triggers:
-                  </p>
-                  <div className="space-y-3">
-                    <div className="bg-background p-4 rounded-lg border border-border">
-                      <h5 className="font-semibold text-foreground mb-2">1. Immediate Collagen Contraction</h5>
-                      <p className="text-sm text-muted-foreground">Existing collagen fibers tighten, giving an instant firming effect.</p>
-                    </div>
-                    <div className="bg-background p-4 rounded-lg border border-border">
-                      <h5 className="font-semibold text-foreground mb-2">2. New Collagen Formation</h5>
-                      <p className="text-sm text-muted-foreground">Over the next few weeks, the skin naturally produces fresh collagen and elastin.</p>
-                    </div>
-                    <div className="bg-background p-4 rounded-lg border border-border">
-                      <h5 className="font-semibold text-foreground mb-2">3. Enhanced Blood Circulation</h5>
-                      <p className="text-sm text-muted-foreground">Improved oxygen and nutrient flow revitalizes dull, tired skin.</p>
-                    </div>
-                    <div className="bg-background p-4 rounded-lg border border-border">
-                      <h5 className="font-semibold text-foreground mb-2">4. Long-Term Rejuvenation</h5>
-                      <p className="text-sm text-muted-foreground">Skin texture continues to improve for months after treatment.</p>
-                    </div>
+              <div>
+                <h4 className="text-xl font-bold mb-3 text-foreground">How RF Technology Works – The Science Behind the Lift</h4>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  The RF energy penetrates the deeper dermal layers (without damaging the surface) and heats the tissues to approximately 40–45°C. This controlled thermal stimulation triggers:
+                </p>
+                <div className="space-y-3">
+                  <div className="bg-background p-4 rounded-lg border border-border">
+                    <h5 className="font-semibold text-foreground mb-2">1. Immediate Collagen Contraction</h5>
+                    <p className="text-sm text-muted-foreground">Existing collagen fibers tighten, giving an instant firming effect.</p>
                   </div>
-                </div>
-
-                <div className="bg-secondary/10 p-6 rounded-lg border border-border">
-                  <h4 className="text-xl font-bold mb-4 text-foreground">Key Benefits of RF Skin Tightening & Lifting</h4>
-                  <div className="space-y-3">
-                    {[
-                      { title: "Non-Surgical Facelift", desc: "Achieve youthful definition and lifted contours without going under the knife" },
-                      { title: "Stimulates Natural Collagen", desc: "Encourages your body to produce new collagen for lasting firmness" },
-                      { title: "Improves Elasticity", desc: "Restores bounce and resilience to sagging skin" },
-                      { title: "Smooths Fine Lines & Wrinkles", desc: "Softens crow's feet, smile lines, and forehead creases" },
-                      { title: "Contours Face & Jawline", desc: "Defines facial shape and reduces jowls for a sculpted profile" },
-                      { title: "Safe for All Skin Types", desc: "RF energy is color-blind — perfect for Indian and sensitive skin tones" },
-                      { title: "Minimal Downtime", desc: "No redness, no peeling, no needles — just glow and go!" }
-                    ].map((benefit, idx) => (
-                      <div key={idx} className="flex items-start space-x-3">
-                        <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                        <div>
-                          <span className="font-semibold text-foreground block">{benefit.title}</span>
-                          <span className="text-sm text-muted-foreground">{benefit.desc}</span>
-                        </div>
-                      </div>
-                    ))}
+                  <div className="bg-background p-4 rounded-lg border border-border">
+                    <h5 className="font-semibold text-foreground mb-2">2. New Collagen Formation</h5>
+                    <p className="text-sm text-muted-foreground">Over the next few weeks, the skin naturally produces fresh collagen and elastin.</p>
                   </div>
-                  <p className="text-primary italic mt-6 text-center text-lg">
-                    "Feel the lift. See the glow. Love the reflection."
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="text-xl font-bold mb-3 text-foreground">Areas That Can Be Treated</h4>
-                  <p className="text-muted-foreground mb-4">RF Skin Tightening & Lifting is versatile and effective for multiple body and facial areas, including:</p>
-                  <div className="grid grid-cols-1 gap-4">
-                    <div className="bg-secondary/10 p-4 rounded-lg border border-border">
-                      <h5 className="font-semibold text-foreground mb-3">Face:</h5>
-                      <ul className="space-y-2">
-                        {["Forehead & Brow", "Cheeks & Jawline", "Nasolabial Folds (Smile Lines)", "Chin & Neck", "Under-eye area"].map((area, idx) => (
-                          <li key={idx} className="flex items-center space-x-2">
-                            <span className="text-primary">✓</span>
-                            <span className="text-muted-foreground">{area}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="bg-secondary/10 p-4 rounded-lg border border-border">
-                      <h5 className="font-semibold text-foreground mb-3">Body:</h5>
-                      <ul className="space-y-2">
-                        {["Upper Arms (Bat Wings)", "Abdomen", "Thighs & Buttocks", "Knees", "Décolletage (Chest Area)"].map((area, idx) => (
-                          <li key={idx} className="flex items-center space-x-2">
-                            <span className="text-primary">✓</span>
-                            <span className="text-muted-foreground">{area}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                  <div className="bg-background p-4 rounded-lg border border-border">
+                    <h5 className="font-semibold text-foreground mb-2">3. Enhanced Blood Circulation</h5>
+                    <p className="text-sm text-muted-foreground">Improved oxygen and nutrient flow revitalizes dull, tired skin.</p>
                   </div>
-                  <p className="text-muted-foreground mt-4 text-center">
-                    Whether you want to refine facial contours or firm up post-weight-loss skin, Nura23's RF treatments deliver visible tightening with every session.
-                  </p>
-                </div>
-
-                <div className="bg-background p-6 rounded-lg border border-border">
-                  <h4 className="text-xl font-bold mb-4 text-foreground">Why Choose Nura23 for RF Skin Tightening?</h4>
-                  <p className="text-muted-foreground mb-4">At Nura23, we redefine non-surgical aesthetics with precision technology, medical expertise, and personalized care.</p>
-                  <div className="space-y-4">
-                    <div className="flex items-start space-x-3">
-                      <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
-                        <span className="font-bold text-primary">1</span>
-                      </div>
-                      <div>
-                        <span className="font-semibold text-foreground block">Certified Aesthetic Experts</span>
-                        <span className="text-sm text-muted-foreground">All procedures are performed by trained skincare professionals under dermatologist supervision.</span>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
-                        <span className="font-bold text-primary">2</span>
-                      </div>
-                      <div>
-                        <span className="font-semibold text-foreground block">Advanced RF Devices</span>
-                        <span className="text-sm text-muted-foreground">We use next-generation bipolar and multipolar RF systems that provide uniform heating and deeper collagen stimulation.</span>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
-                        <span className="font-bold text-primary">3</span>
-                      </div>
-                      <div>
-                        <span className="font-semibold text-foreground block">Custom Treatment Plans</span>
-                        <span className="text-sm text-muted-foreground">Every skin type and concern is unique — so we tailor intensity, duration, and frequency accordingly.</span>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
-                        <span className="font-bold text-primary">4</span>
-                      </div>
-                      <div>
-                        <span className="font-semibold text-foreground block">Safe, Painless, and Relaxing</span>
-                        <span className="text-sm text-muted-foreground">Clients describe the sensation as a gentle warmth or massage — not pain.</span>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
-                        <span className="font-bold text-primary">5</span>
-                      </div>
-                      <div>
-                        <span className="font-semibold text-foreground block">Instant & Progressive Results</span>
-                        <span className="text-sm text-muted-foreground">Experience a visible lift immediately, with continued improvement over 8–12 weeks.</span>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
-                        <span className="font-bold text-primary">6</span>
-                      </div>
-                      <div>
-                        <span className="font-semibold text-foreground block">Holistic Wellness Integration</span>
-                        <span className="text-sm text-muted-foreground">Pair your RF sessions with Nura23's nutritional guidance, hydration facials, and LED therapy for total skin rejuvenation.</span>
-                      </div>
-                    </div>
+                  <div className="bg-background p-4 rounded-lg border border-border">
+                    <h5 className="font-semibold text-foreground mb-2">4. Long-Term Rejuvenation</h5>
+                    <p className="text-sm text-muted-foreground">Skin texture continues to improve for months after treatment.</p>
                   </div>
-                </div>
-
-                <div className="bg-secondary/10 p-6 rounded-lg border border-border">
-                  <h4 className="text-xl font-bold mb-4 text-foreground">Ideal Candidates for RF Skin Tightening</h4>
-                  <p className="text-muted-foreground mb-4">RF Skin Lifting is suitable for both men and women who want to reverse early signs of aging or improve skin firmness without surgery.</p>
-                  <div className="space-y-4">
-                    <div>
-                      <h5 className="font-semibold text-foreground mb-3">You're an ideal candidate if you:</h5>
-                      <div className="space-y-2">
-                        {[
-                          "Have mild to moderate sagging skin",
-                          "Notice loss of facial definition or firmness",
-                          "Prefer a non-surgical alternative to facelift",
-                          "Want to delay or avoid invasive cosmetic procedures",
-                          "Have post-pregnancy or post-weight-loss skin laxity"
-                        ].map((point, idx) => (
-                          <div key={idx} className="flex items-center space-x-2">
-                            <span className="text-primary">✓</span>
-                            <span className="text-sm text-muted-foreground">{point}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold text-foreground mb-3">Avoid treatment if you:</h5>
-                      <div className="space-y-2">
-                        {[
-                          "Are pregnant or breastfeeding",
-                          "Have active skin infections or open wounds",
-                          "Have metal implants or pacemakers in the treatment area"
-                        ].map((point, idx) => (
-                          <div key={idx} className="flex items-center space-x-2">
-                            <span className="text-destructive">✗</span>
-                            <span className="text-sm text-muted-foreground">{point}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  <p className="text-sm text-muted-foreground mt-4">
-                    Our team conducts a detailed skin analysis before every treatment to ensure it's safe and suitable for your skin condition.
-                  </p>
-                </div>
-
-                <div className="bg-background p-6 rounded-lg border-l-4 border-primary">
-                  <h4 className="text-xl font-bold mb-3 text-foreground">Expected Results</h4>
-                  <p className="text-muted-foreground mb-4">
-                    You'll notice instant skin tightening after the first session as collagen fibers contract. Over the next few weeks, your skin continues to firm, smooth, and glow as new collagen forms.
-                  </p>
-                  <div className="space-y-2 mb-4">
-                    <h5 className="font-semibold text-foreground">Visible Improvements:</h5>
-                    {["Lifted jawline & cheeks", "Reduced wrinkles & fine lines", "Smoother texture", "Youthful glow"].map((result, idx) => (
-                      <div key={idx} className="flex items-center space-x-2">
-                        <span className="text-primary">✓</span>
-                        <span className="text-muted-foreground">{result}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    For best results, we recommend a course of 6–8 sessions, spaced 2–3 weeks apart.
-                  </p>
                 </div>
               </div>
+
+              <div className="bg-secondary/10 p-6 rounded-lg border border-border">
+                <h4 className="text-xl font-bold mb-4 text-foreground">Key Benefits of RF Skin Tightening & Lifting</h4>
+                <div className="space-y-3">
+                  {[
+                    { title: "Non-Surgical Facelift", desc: "Achieve youthful definition and lifted contours without going under the knife" },
+                    { title: "Stimulates Natural Collagen", desc: "Encourages your body to produce new collagen for lasting firmness" },
+                    { title: "Improves Elasticity", desc: "Restores bounce and resilience to sagging skin" },
+                    { title: "Smooths Fine Lines & Wrinkles", desc: "Softens crow's feet, smile lines, and forehead creases" },
+                    { title: "Contours Face & Jawline", desc: "Defines facial shape and reduces jowls for a sculpted profile" },
+                    { title: "Safe for All Skin Types", desc: "RF energy is color-blind — perfect for Indian and sensitive skin tones" },
+                    { title: "Minimal Downtime", desc: "No redness, no peeling, no needles — just glow and go!" }
+                  ].map((benefit, idx) => (
+                    <div key={idx} className="flex items-start space-x-3">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <span className="font-semibold text-foreground block">{benefit.title}</span>
+                        <span className="text-sm text-muted-foreground">{benefit.desc}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-primary italic mt-6 text-center text-lg">
+                  "Feel the lift. See the glow. Love the reflection."
+                </p>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-bold mb-3 text-foreground">Areas That Can Be Treated</h4>
+                <p className="text-muted-foreground mb-4">RF Skin Tightening & Lifting is versatile and effective for multiple body and facial areas, including:</p>
+                <div className="grid grid-cols-1 gap-4">
+                  <div className="bg-secondary/10 p-4 rounded-lg border border-border">
+                    <h5 className="font-semibold text-foreground mb-3">Face:</h5>
+                    <ul className="space-y-2">
+                      {["Forehead & Brow", "Cheeks & Jawline", "Nasolabial Folds (Smile Lines)", "Chin & Neck", "Under-eye area"].map((area, idx) => (
+                        <li key={idx} className="flex items-center space-x-2">
+                          <span className="text-primary">✓</span>
+                          <span className="text-muted-foreground">{area}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="bg-secondary/10 p-4 rounded-lg border border-border">
+                    <h5 className="font-semibold text-foreground mb-3">Body:</h5>
+                    <ul className="space-y-2">
+                      {["Upper Arms (Bat Wings)", "Abdomen", "Thighs & Buttocks", "Knees", "Décolletage (Chest Area)"].map((area, idx) => (
+                        <li key={idx} className="flex items-center space-x-2">
+                          <span className="text-primary">✓</span>
+                          <span className="text-muted-foreground">{area}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mt-4 text-center">
+                  Whether you want to refine facial contours or firm up post-weight-loss skin, Nura23's RF treatments deliver visible tightening with every session.
+                </p>
+              </div>
+
+              <div className="bg-background p-6 rounded-lg border border-border">
+                <h4 className="text-xl font-bold mb-4 text-foreground">Why Choose Nura23 for RF Skin Tightening?</h4>
+                <p className="text-muted-foreground mb-4">At Nura23, we redefine non-surgical aesthetics with precision technology, medical expertise, and personalized care.</p>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
+                      <span className="font-bold text-primary">1</span>
+                    </div>
+                    <div>
+                      <span className="font-semibold text-foreground block">Certified Aesthetic Experts</span>
+                      <span className="text-sm text-muted-foreground">All procedures are performed by trained skincare professionals under dermatologist supervision.</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
+                      <span className="font-bold text-primary">2</span>
+                    </div>
+                    <div>
+                      <span className="font-semibold text-foreground block">Advanced RF Devices</span>
+                      <span className="text-sm text-muted-foreground">We use next-generation bipolar and multipolar RF systems that provide uniform heating and deeper collagen stimulation.</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
+                      <span className="font-bold text-primary">3</span>
+                    </div>
+                    <div>
+                      <span className="font-semibold text-foreground block">Custom Treatment Plans</span>
+                      <span className="text-sm text-muted-foreground">Every skin type and concern is unique — so we tailor intensity, duration, and frequency accordingly.</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
+                      <span className="font-bold text-primary">4</span>
+                    </div>
+                    <div>
+                      <span className="font-semibold text-foreground block">Safe, Painless, and Relaxing</span>
+                      <span className="text-sm text-muted-foreground">Clients describe the sensation as a gentle warmth or massage — not pain.</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
+                      <span className="font-bold text-primary">5</span>
+                    </div>
+                    <div>
+                      <span className="font-semibold text-foreground block">Instant & Progressive Results</span>
+                      <span className="text-sm text-muted-foreground">Experience a visible lift immediately, with continued improvement over 8–12 weeks.</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
+                      <span className="font-bold text-primary">6</span>
+                    </div>
+                    <div>
+                      <span className="font-semibold text-foreground block">Holistic Wellness Integration</span>
+                      <span className="text-sm text-muted-foreground">Pair your RF sessions with Nura23's nutritional guidance, hydration facials, and LED therapy for total skin rejuvenation.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-secondary/10 p-6 rounded-lg border border-border">
+                <h4 className="text-xl font-bold mb-4 text-foreground">Ideal Candidates for RF Skin Tightening</h4>
+                <p className="text-muted-foreground mb-4">RF Skin Lifting is suitable for both men and women who want to reverse early signs of aging or improve skin firmness without surgery.</p>
+                <div className="space-y-4">
+                  <div>
+                    <h5 className="font-semibold text-foreground mb-3">You're an ideal candidate if you:</h5>
+                    <div className="space-y-2">
+                      {[
+                        "Have mild to moderate sagging skin",
+                        "Notice loss of facial definition or firmness",
+                        "Prefer a non-surgical alternative to facelift",
+                        "Want to delay or avoid invasive cosmetic procedures",
+                        "Have post-pregnancy or post-weight-loss skin laxity"
+                      ].map((point, idx) => (
+                        <div key={idx} className="flex items-center space-x-2">
+                          <span className="text-primary">✓</span>
+                          <span className="text-sm text-muted-foreground">{point}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-foreground mb-3">Avoid treatment if you:</h5>
+                    <div className="space-y-2">
+                      {[
+                        "Are pregnant or breastfeeding",
+                        "Have active skin infections or open wounds",
+                        "Have metal implants or pacemakers in the treatment area"
+                      ].map((point, idx) => (
+                        <div key={idx} className="flex items-center space-x-2">
+                          <span className="text-destructive">✗</span>
+                          <span className="text-sm text-muted-foreground">{point}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mt-4">
+                  Our team conducts a detailed skin analysis before every treatment to ensure it's safe and suitable for your skin condition.
+                </p>
+              </div>
+
+              <div className="bg-background p-6 rounded-lg border-l-4 border-primary">
+                <h4 className="text-xl font-bold mb-3 text-foreground">Expected Results</h4>
+                <p className="text-muted-foreground mb-4">
+                  You'll notice instant skin tightening after the first session as collagen fibers contract. Over the next few weeks, your skin continues to firm, smooth, and glow as new collagen forms.
+                </p>
+                <div className="space-y-2 mb-4">
+                  <h5 className="font-semibold text-foreground">Visible Improvements:</h5>
+                  {["Lifted jawline & cheeks", "Reduced wrinkles & fine lines", "Smoother texture", "Youthful glow"].map((result, idx) => (
+                    <div key={idx} className="flex items-center space-x-2">
+                      <span className="text-primary">✓</span>
+                      <span className="text-muted-foreground">{result}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  For best results, we recommend a course of 6–8 sessions, spaced 2–3 weeks apart.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -503,9 +508,9 @@ const Aesthetics = () => {
 
             {/* Image below heading */}
             <div className="mb-8">
-              <img 
-                src={bodyContouringRF} 
-                alt="Body Contouring & Fat Reduction RF Treatment at NURA23" 
+              <img
+                src={bodyContouringRF}
+                alt="Body Contouring & Fat Reduction RF Treatment at NURA23"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -836,9 +841,9 @@ const Aesthetics = () => {
 
             {/* Image below heading */}
             <div className="mb-8">
-              <img 
-                src={prpMicroneedling} 
-                alt="PRP Microneedling Treatment at NURA23" 
+              <img
+                src={prpMicroneedling}
+                alt="PRP Microneedling Treatment at NURA23"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -853,7 +858,7 @@ const Aesthetics = () => {
 
               <div>
                 <h4 className="text-xl font-bold mb-4 text-foreground">What Are PRP, Microneedling & Chemical Peels?</h4>
-                
+
                 <div className="space-y-6">
                   <div className="bg-secondary/10 p-6 rounded-lg">
                     <h5 className="text-lg font-bold mb-3 text-foreground">1. PRP (Platelet-Rich Plasma) Therapy – Natural Skin Regeneration</h5>
@@ -1097,9 +1102,9 @@ const Aesthetics = () => {
 
             {/* Image below heading */}
             <div className="mb-8">
-              <img 
-                src={botoxFillers} 
-                alt="Botox & Fillers Treatment at NURA23" 
+              <img
+                src={botoxFillers}
+                alt="Botox & Fillers Treatment at NURA23"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -1121,7 +1126,7 @@ const Aesthetics = () => {
               <div>
                 <h4 className="text-xl font-bold mb-4 text-foreground">Understanding Botox and Fillers</h4>
                 <p className="text-muted-foreground mb-4">Though often mentioned together, Botox and Fillers work differently — and when used strategically, they complement each other beautifully for facial rejuvenation.</p>
-                
+
                 <div className="space-y-6">
                   <div className="bg-background p-6 rounded-lg border-l-4 border-primary">
                     <h5 className="text-lg font-bold mb-3 text-foreground">1. Botox (Botulinum Toxin Type A)</h5>
